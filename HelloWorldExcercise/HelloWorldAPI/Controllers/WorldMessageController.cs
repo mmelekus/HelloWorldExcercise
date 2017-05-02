@@ -18,5 +18,30 @@ namespace HelloWorldAPI.Controllers
         {
             return Ok(new HelloWorldMessage() { Message = "Hello World!" });
         }
+
+        // GET api/WorldMessage/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "Hello World!";
+        }
+
+        // POST api/WorldMessage
+        [HttpPost]
+        public void Post([FromBody]string value)
+        {
+        }
+
+        // PUT api/WorldMessage/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody]string value)
+        {
+        }
+
+        // DELETE api/WorldMessage/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+        }
     }
 }

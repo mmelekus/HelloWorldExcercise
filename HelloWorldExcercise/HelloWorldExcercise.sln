@@ -9,6 +9,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldModels", "HelloWo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldConsole", "HelloWorldConsole\HelloWorldConsole.csproj", "{9C274CE6-770B-46AA-AFCA-283F77518E59}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{5758EA97-EC61-43E3-A6EA-E075A9BF32C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{7447D6D3-F0F0-4249-B092-CDA055F6524A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{818A7166-7CC4-460A-9689-061841D363FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldInfrastructure", "HelloWorldInfrastructure\HelloWorldInfrastructure.csproj", "{B946F1C5-25A1-47F4-8863-79231A37D7D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{D5EC128E-E2E0-406D-8784-D7B383A436CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAccess", "FileAccess\FileAccess.csproj", "{4083C7E6-9563-4562-8756-CAEE50E666ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{52093C22-6B47-46D5-B031-52CF9EB730F3}"
+	ProjectSection(SolutionItems) = preProject
+		Data\HelloWorldMessages.csv = Data\HelloWorldMessages.csv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +44,23 @@ Global
 		{9C274CE6-770B-46AA-AFCA-283F77518E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C274CE6-770B-46AA-AFCA-283F77518E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C274CE6-770B-46AA-AFCA-283F77518E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B946F1C5-25A1-47F4-8863-79231A37D7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B946F1C5-25A1-47F4-8863-79231A37D7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B946F1C5-25A1-47F4-8863-79231A37D7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B946F1C5-25A1-47F4-8863-79231A37D7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4083C7E6-9563-4562-8756-CAEE50E666ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4083C7E6-9563-4562-8756-CAEE50E666ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4083C7E6-9563-4562-8756-CAEE50E666ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4083C7E6-9563-4562-8756-CAEE50E666ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10FA9DD0-635C-419E-9736-340A243924DE} = {5758EA97-EC61-43E3-A6EA-E075A9BF32C3}
+		{4BAEFEA3-97B7-4AC9-90D6-20062CD428D2} = {818A7166-7CC4-460A-9689-061841D363FB}
+		{9C274CE6-770B-46AA-AFCA-283F77518E59} = {7447D6D3-F0F0-4249-B092-CDA055F6524A}
+		{B946F1C5-25A1-47F4-8863-79231A37D7D8} = {818A7166-7CC4-460A-9689-061841D363FB}
+		{4083C7E6-9563-4562-8756-CAEE50E666ED} = {D5EC128E-E2E0-406D-8784-D7B383A436CF}
 	EndGlobalSection
 EndGlobal
