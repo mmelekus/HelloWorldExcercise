@@ -18,7 +18,7 @@ namespace HelloWorldConsole
             int delay;
             int.TryParse(startup.Configuration["Delay"] ?? "2000", out delay);
 
-            Task.Delay(2000);
+            Task.Delay(delay);
             // Initialize and call an HttpClient to get the "Hello World!" message
             using (var httpClient = new HttpClient())
             {
