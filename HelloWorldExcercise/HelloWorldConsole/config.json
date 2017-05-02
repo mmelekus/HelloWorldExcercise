@@ -1,0 +1,7 @@
+{
+  "HelloWorldSource": {
+    "URL": "http://localhost:60671/",
+    "HelloWorld": "api/WorldMessage"
+  },
+  "Delay": 20000
+}
