@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{D5EC128E-E2E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAccess", "FileAccess\FileAccess.csproj", "{4083C7E6-9563-4562-8756-CAEE50E666ED}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{52093C22-6B47-46D5-B031-52CF9EB730F3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F9C7550D-6D4F-41CE-8FA2-9A5F643916B1}"
 	ProjectSection(SolutionItems) = preProject
 		Data\HelloWorldMessages.csv = Data\HelloWorldMessages.csv
 	EndProjectSection

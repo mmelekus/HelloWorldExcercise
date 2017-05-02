@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace HelloWorldInfrastructure
 {
-    interface IRepositoryKey<TEntity, TKey> : IRepository<TEntity>
+    public interface IRepositoryKey<TEntity, TKey> : IRepository<TEntity>
     {
-        IEnumerable<TEntity> GetItem(TKey id);
+        IQueryable<TEntity> GetItem(TKey id);
         void DeleteByKey(TKey id);
     }
 }

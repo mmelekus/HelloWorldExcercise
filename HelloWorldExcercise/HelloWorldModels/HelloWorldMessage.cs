@@ -6,7 +6,7 @@ namespace HelloWorldModels
 {
     public class HelloWorldMessage
     {
-        public int? Id { get; set; }
+        public string Id { get; set; }
         public string Message { get; set; }
     }
 }
