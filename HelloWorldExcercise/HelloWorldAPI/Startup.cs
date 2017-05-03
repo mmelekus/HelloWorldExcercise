@@ -31,8 +31,8 @@ namespace HelloWorldAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddOptions();
-            services.Configure<FileOptions>(Configuration);
-            services.AddSingleton<IRepositoryKey<HelloWorldMessage, string>, HelloWorldFile>();
+            services.Configure<FileOptions>(Configuration); // File Access DAL options are loaded from the configuration file
+            services.AddTransient<IRepositoryKey<HelloWorldMessage, string>, HelloWorldFile>();  // Use a transient instance of the DAL to load it as necessary
             // Add framework services.
             services.AddMvc();
 
